@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="242.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.wohlers.directoryCleaner.Controller">
+   <children>
+      <Button fx:id="selectRootButton" mnemonicParsing="false" onAction="#onSelect" text="Stammverzeichnis wählen" GridPane.columnIndex="1" />
+      <Button fx:id="executeButton" mnemonicParsing="false" onAction="#onExecute" text="Leere Ordner löschen" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="rootField" editable="false" />
+      <Label fx:id="statusLabel" text="Bereit" GridPane.rowIndex="1" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+</GridPane>
